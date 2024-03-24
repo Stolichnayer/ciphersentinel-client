@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" fillWidth="false" prefHeight="457.0" prefWidth="656.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ciphersentinel.client.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="Sign in">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="10.0" />
+      </VBox.margin></Label>
+   <TextField fx:id="loginUsernameTextfield" prefHeight="25.0" prefWidth="256.0" promptText="Username" />
+   <PasswordField fx:id="loginPasswordTextfield" prefHeight="25.0" prefWidth="256.0" promptText="Password">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></PasswordField>
+   <Label fx:id="loginInformationLabel" text="Incorrect username or password." textFill="RED" visible="false">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+    <Button onAction="#onLoginButtonClick" prefHeight="23.0" prefWidth="84.0" text="Log in">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+</VBox>
