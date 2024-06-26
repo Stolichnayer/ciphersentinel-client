@@ -4,30 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018f68fa-b1ae-4438-9a3f-6cb1eb0d7e0c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciphersentinel/client/ClientApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciphersentinel/client/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciphersentinel/client/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciphersentinel/client/model/API.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ciphersentinel/client/client-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ciphersentinel/client/list_item.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ciphersentinel/client/login-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_close_20px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_close_40px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_close_64px.png" afterDir="false" />
+    <list default="true" id="018f68fa-b1ae-4438-9a3f-6cb1eb0d7e0c" name="Changes" comment="Initial Commit of Client Application.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciphersentinel/client/VaultItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ciphersentinel/client/list-item.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ciphersentinel/client/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/cryptonest_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/cryptonest_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/cryptonest_logo_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/cryptonest_logo_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/cryptonest_logo_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_Plus_40px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_copy_50px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_edit_50px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_edit_50px_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_edit_50px_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_eye_50px_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_facebook_circled_50px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_key_2_40px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_key_64px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_lock_48px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_logout_48px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_person_50px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_person_male_skin_type_4_40px_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_plus_math_48px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_safe_40px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_safe_48px_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_safe_48px_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_settings_48px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_subtract_40px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_test_account_40px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_test_account_40px_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_test_account_50px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_test_account_64px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_user_48px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/icons8_user_96px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/img_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ciphersentinel/client/ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ciphersentinel/client/ClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ciphersentinel/client/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ciphersentinel/client/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ciphersentinel/client/client-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ciphersentinel/client/client-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ciphersentinel/client/list_item.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,20 +74,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/alexp/Desktop/CipherSentinel/src/main/java/com/ciphersentinel/client&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexp/Desktop/CipherSentinel/src/main/resources/icons&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowRun.ShowToolbar": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_directory_selection": "C:/Users/alexp/Desktop/CipherSentinel/src/main/java/com/ciphersentinel/client",
+    "last_opened_file_path": "C:/Users/alexp/Desktop/CipherSentinel/src/main/resources/icons",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alexp\Desktop\CipherSentinel\src\main\resources\icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alexp\Desktop\CipherSentinel\src\main\resources\icons" />
+      <recent name="C:\Users\alexp\Desktop\CipherSentinel\src\main\resources\com\ciphersentinel\client" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ciphersentinel.client" />
     </key>
   </component>
   <component name="RunManager">
@@ -89,7 +116,29 @@
       <option name="presentableId" value="Default" />
       <updated>1711194388077</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit of Client Application.">
+      <created>1711286320308</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711286320308</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit of Client Application." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit of Client Application." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassNotFoundException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,33 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="614.0" prefWidth="971.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ciphersentinel.client.ClientController">
+<AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="605.0" prefWidth="950.0" style="-fx-background-color: #383838; -fx-border-color: white; -fx-border-width: 0; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ciphersentinel.client.ClientController">
    <children>
-      <BorderPane prefHeight="614.0" prefWidth="971.0" style="-fx-background-radius: 20px;">
+      <BorderPane layoutX="1.0" layoutY="1.0" prefHeight="603.0" prefWidth="948.0" style="-fx-background-color: transparent; -fx-border-radius: 10; -fx-border-width: 0;">
          <left>
-            <VBox alignment="TOP_CENTER" prefHeight="523.0" prefWidth="213.0" style="-fx-background-color: #191919; -fx-border-insets: 0 0 0 0; -fx-background-radius: 30px 0 0 30px; -fx-background-radius: 0;" BorderPane.alignment="CENTER">
+            <VBox alignment="CENTER_LEFT" prefHeight="523.0" prefWidth="213.0" style="-fx-background-color: #222831; -fx-border-insets: 0 0 0 0; -fx-background-radius: 30px 0 0 30px; -fx-background-radius: 10 0 0 10;" BorderPane.alignment="CENTER">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="213.0" text="CipherSentinel" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-                     <font>
-                        <Font name="System Bold" size="18.0" />
-                     </font>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/cryptonest_logo_5.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" top="11.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="213.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/icons8_user_48px.png" />
+                           </image>
+                        </ImageView>
+                        <Label contentDisplay="CENTER" prefHeight="46.0" prefWidth="114.0" text="Alexandros" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
                      <padding>
-                        <Insets left="5.0" />
+                        <Insets left="20.0" />
                      </padding>
-                  </Label>
+                  </HBox>
+                  <BorderPane prefHeight="516.0" prefWidth="213.0">
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="52.0" prefWidth="213.0" spacing="20.0" style="-fx-background-color: #1C2129; -fx-background-radius: 0 0 0 10;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="settingsBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: transparent;" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../icons/icons8_settings_48px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="settingsBtn1" layoutX="100.0" layoutY="26.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: transparent;" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../icons/icons8_lock_48px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="addPassword12" mnemonicParsing="false" prefHeight="30.0" prefWidth="65.0" style="-fx-background-color: #00ADB5;" text="Logout" textFill="#eeeeee">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </bottom>
+                  </BorderPane>
                </children></VBox>
          </left>
          <center>
-            <VBox prefHeight="530.0" prefWidth="359.0" style="-fx-background-color: #121212; -fx-background-radius: 0; -fx-border-color: black; -fx-border-insets: -1 0 -1 0;" BorderPane.alignment="CENTER">
+            <VBox prefHeight="530.0" prefWidth="359.0" style="-fx-background-color: #2C323B; -fx-background-radius: 0; -fx-border-color: black; -fx-border-insets: -1 0 -1 0; -fx-border-insets: 0 0 0 0; -fx-border-width: 0 0;" BorderPane.alignment="CENTER">
                <children>
+                  <HBox alignment="CENTER" prefHeight="29.0" prefWidth="357.0">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/icons8_safe_48px_3.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="2.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="138.0" text="Password Vault" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
                   <HBox alignment="CENTER" prefHeight="38.0" prefWidth="359.0" spacing="10.0">
                      <children>
-                        <TextField focusTraversable="false" prefHeight="44.0" prefWidth="253.0" promptText="Search password..." style="-fx-border-radius: 10; -fx-background-radius: 16px;">
+                        <TextField focusTraversable="false" prefHeight="29.0" prefWidth="246.0" promptText="Search..." style="-fx-border-radius: 10; -fx-background-radius: 5; -fx-background-color: #393E46;">
                            <font>
                               <Font size="13.0" />
                            </font>
@@ -35,25 +132,39 @@
                               <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
                            </padding>
                         </TextField>
+                        <Button fx:id="addPassword" mnemonicParsing="false" prefHeight="27.0" prefWidth="18.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../icons/icons8_plus_math_48px.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="6.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
                      </children>
                      <padding>
-                        <Insets bottom="10.0" top="12.0" />
+                        <Insets bottom="10.0" top="10.0" />
                      </padding>
                   </HBox>
-                  <VBox prefHeight="564.0" prefWidth="357.0">
-                     <children>
-                        <Label fx:id="testLabel" alignment="CENTER" prefHeight="568.0" prefWidth="359.0" text="Label" textFill="WHITE">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                     </children></VBox>
+                  <ScrollPane fitToWidth="true" focusTraversable="false" prefHeight="495.0" prefWidth="301.0" style="-fx-background-color: #2C323B; -fx-border-color: black; -fx-border-width: 0 0; -fx-border-insets: -1 -1;">
+                     <content>
+                        <VBox fx:id="vaultVBox" prefHeight="493.0" prefWidth="262.0" snapToPixel="false" spacing="5.0" style="-fx-background-color: #2C323B;">
+                           <padding>
+                              <Insets left="5.0" right="3.0" />
+                           </padding></VBox>
+                     </content>
+                  </ScrollPane>
                </children></VBox>
          </center>
          <right>
-            <Pane prefHeight="588.0" prefWidth="399.0" style="-fx-background-color: #0A0A0A; -fx-background-color: #121212; -fx-background-radius: 0 30px 30px 0; -fx-background-radius: 0;" BorderPane.alignment="CENTER">
+            <Pane prefHeight="588.0" prefWidth="408.0" style="-fx-background-color: 282828; -fx-background-color: #1C2129; -fx-background-radius: 0 10  10 0;" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="closeBtn" alignment="BASELINE_LEFT" layoutX="357.0" layoutY="14.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="23.0" prefWidth="27.0" style="-fx-background-color: #282828;">
+                  <Button fx:id="closeBtn" alignment="BASELINE_LEFT" layoutX="371.0" layoutY="8.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #393E46;">
                      <font>
                         <Font size="6.0" />
                      </font>
@@ -64,6 +175,161 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="minimizeBtn" alignment="BASELINE_LEFT" layoutX="338.0" layoutY="8.0" mnemonicParsing="false" onAction="#onMinimizeButtonClick" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #393E46;">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="20.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/icons8_subtract_40px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="43.0" fitWidth="48.0" layoutX="50.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/icons8_facebook_circled_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="105.0" layoutY="113.0" text="Login" textFill="#bfbcbc">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                  <Label layoutX="105.0" layoutY="88.0" prefHeight="27.0" prefWidth="248.0" text="Facebook" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="50.0" layoutY="157.0" opacity="0.3" prefHeight="0.0" prefWidth="307.0" scaleY="0.8" style="-fx-background-color: #222831;" />
+                  <Separator layoutX="50.0" layoutY="437.0" opacity="0.3" prefHeight="7.0" prefWidth="307.0" scaleY="0.8" />
+                  <TextField focusTraversable="false" layoutX="50.0" layoutY="187.0" prefHeight="37.0" prefWidth="273.0" promptText="Username" style="-fx-border-radius: 10; -fx-background-radius: 5; -fx-background-color: #393E46;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <TextField focusTraversable="false" layoutX="50.0" layoutY="243.0" prefHeight="37.0" prefWidth="273.0" promptText="Password" style="-fx-border-radius: 10; -fx-background-radius: 5; -fx-background-color: #393E46;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <Label layoutX="50.0" layoutY="457.0" text="Notes" textFill="#bfbcbc">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                  <Label layoutX="50.0" layoutY="385.0" text="Website" textFill="#bfbcbc">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                  <Label layoutX="50.0" layoutY="404.0" text="facebook.com" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                  <Label layoutX="50.0" layoutY="476.0" text="Enter some notes here" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="editBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" layoutY="97.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: transparent;">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="22.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/icons8_edit_50px_2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="294.0" layoutY="102.0" text="Edit" textFill="#bfbcbc">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="copyUsernameBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="190.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/icons8_copy_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="copyPasswordBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="246.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/icons8_copy_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="revealPasswordBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="284.0" layoutY="246.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/icons8_eye_50px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="50.0" layoutY="302.0" text="Password Strength " textFill="#bfbcbc">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="TOP_CENTER" layoutX="50.0" layoutY="326.0" prefHeight="10.0" prefWidth="306.0" spacing="3.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1fff94" height="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="48.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1fff94" height="8.0" layoutX="139.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="48.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1fff94" height="8.0" layoutX="165.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="48.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1fff94" height="8.0" layoutX="87.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="48.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1fff94" height="8.0" layoutX="139.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="48.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#717573" height="8.0" layoutX="191.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="48.0" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="generateBtn" layoutX="283.0" layoutY="349.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" style="-fx-background-color: #00ADB5;" text="Generate" textFill="#eeeeee">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                </children></Pane>
          </right>

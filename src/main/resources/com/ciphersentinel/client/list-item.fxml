@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="63.0" prefWidth="257.0" style="-fx-background-color: #2C323B; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ciphersentinel.client.VaultItemController">
+   <children>
+      <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="12.0">
+         <image>
+            <Image url="@../../../icons/icons8_key_2_40px.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="appNameItem" alignment="BOTTOM_LEFT" contentDisplay="CENTER" layoutX="59.0" layoutY="-1.0" prefHeight="31.0" prefWidth="198.0" text="App Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameItem" contentDisplay="CENTER" layoutX="58.0" layoutY="23.0" prefHeight="40.0" prefWidth="198.0" text="mail@mail.com" textFill="WHITE" />
+   </children>
+</AnchorPane>
